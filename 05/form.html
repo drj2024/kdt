@@ -3,13 +3,13 @@
         <title>HTML의 폼태그</title>
     </head>
     <body>
-        <form>
-            <lable for="name">이름: </lable><input id="name"><br>
-            <lable for="age">나이: </lable><input id="age" type="number" min="0"><br>
-            <lable for="email">이메일: </lable><input id="email" type="email"><br>
-            <lable for="birth">생년월일: </lable><input id="birth" type="date"><br>
-            <lable for="county">국적: </lable>
-            <select >
+        <form method="post">
+            <label  for="name">이름: </label ><input id="name" name="name"><br>
+            <label  for="age">나이: </label><input id="age" name="age" type="number" min="0"><br>
+            <label  for="email">이메일: </label><input id="email" type="email" name="email"><br>
+            <label  for="birth">생년월일: </label><input id="birth" name="birth" type="date"><br>
+            <label  for="country">국적: </label>
+            <select id="country" name="country" >
                 <option>대한민국</option>
                 <option>중국</option>
                 <option>일본</option>
