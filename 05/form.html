@@ -3,14 +3,19 @@
         <title>HTML의 폼태그</title>
     </head>
     <body>
-        <input type='text' name="data" required><br><br>
+        <textarea rows="4"></textarea>
+        <br><br>
+        <textarea>기본값은 이렇습니다&#13;그리고</textarea>
+        <br><br>
+        <label for="xxx">이름: </label><input id="xxx" type='text' name="data" readonly value="기본값" required>
+        <br><br>
         <input placeholder="drj@hnu.kr">
         <br><br>
-        <input type="color">
+        <input type="color" disabled>
         <br><br>
-        <input type="date">
+        <input type="date" value="2024-06-03">
         <br><br>
-        <input type="datetime-local">
+        <input type="datetime-local" value="안녕하세요">
         <br><br>
         <input type="password">
         <br><br>
@@ -19,6 +24,12 @@
         <input type="file" multiple>
         <br><br>
         <input type="email">
+        <br><br>
+        <input type="radio" name="g" checked>남성
+        <input type="radio" name="g">여성
+        <br><br>
+        <input type="checkbox">약관에 동의합니다.
         
+
     </body>
 </html>
