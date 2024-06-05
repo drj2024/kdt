@@ -3,13 +3,61 @@
         <title>HTML의 폼태그</title>
     </head>
     <body>
+        <form>
+            <lable for="name">이름: </lable><input id="name"><br>
+            <lable for="age">나이: </lable><input id="age" type="number" min="0"><br>
+            <lable for="email">이메일: </lable><input id="email" type="email"><br>
+            <lable for="birth">생년월일: </lable><input id="birth" type="date"><br>
+            <lable for="county">국적: </lable>
+            <select >
+                <option>대한민국</option>
+                <option>중국</option>
+                <option>일본</option>
+                <option>미국</option>
+                <option>영국</option>
+            </select><br><br>
+            <button type="reset">초기화</button>
+            <button type="submit">보내기</button>
+
+        </form>
+
+<!--
+        <div>
+            국가를 선택해 주세요.
+        </div>
+        <input list="dataList">
+        <datalist id="dataList">
+            <option value="대한민국"></option>
+            <option value="중국"></option>
+            <option value="일본"></option>
+            <option value="미국"></option>
+            <option value="영국"></option>
+        </datalist>
+        <br><br>
+        <select >
+            <option>대한민국</option>
+            <option>중국</option>
+            <option>일본</option>
+            <option>미국</option>
+            <option>영국</option>
+        </select>
+        <br><br>
+        <select multiple>
+            <option>대한민국</option>
+            <option>중국</option>
+            <option>일본</option>
+            <option>미국</option>
+            <option>영국</option>
+        </select>
+        <div>textarea</div>
         <textarea rows="4"></textarea>
         <br><br>
         <textarea>기본값은 이렇습니다&#13;그리고</textarea>
         <br><br>
-        <label for="xxx">이름: </label><input id="xxx" type='text' name="data" readonly value="기본값" required>
+        <label for="xxx">이름: </label><input id="xxx" type='text' name="data"  value="기본값" required>
         <br><br>
-        <input placeholder="drj@hnu.kr">
+        <label for="email">이메일: </label>
+        <input id="email" placeholder="drj@hnu.kr">
         <br><br>
         <input type="color" disabled>
         <br><br>
@@ -30,6 +78,6 @@
         <br><br>
         <input type="checkbox">약관에 동의합니다.
         
-
+-->
     </body>
 </html>
