@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단 출력</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #result {
+            margin-top: 20px;
+            white-space: pre-line;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>구구단 출력</h1>
+        <button onclick="printGugudan()">구구단 출력</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        function printGugudan() {
+            let result = '';
+            for (let i = 2; i <= 9; i++) {
+                result += `--- ${i}단 ---\n`;
+                for (let j = 1; j <= 9; j++) {
+                    result += `${i} x ${j} = ${i * j}\n`;
+                }
+                result += '\n'; // 단과 단 사이에 빈 줄 추가
+            }
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>
