@@ -1,0 +1,33 @@
+<style>
+    .scale-a {
+        transform: scale(2) translate(50px, 50px);
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+        z-index: 5;
+    }
+    .flex {
+        display: flex;
+    }
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+
+    .sm-box {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        z-index: 9;
+
+    }
+</style>
+
+<div class="flex">
+    <div class="scale-a">정사각형 A</div>
+    <div class="sm-box">왼쪽에 <br> 정사각형 A가 <br> 있습니다</div>
+</div>
+<div class="box"> 위에 정사각형 A가 있습니다.</div>

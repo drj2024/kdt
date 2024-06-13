@@ -1,0 +1,47 @@
+<style>
+    .container {
+        display: flex;
+        gap: 50px;
+        margin: 32px;
+    }
+    .rotate-deg {
+        transform: rotate(45deg);
+        
+    }
+    .rotate-rad {
+        transform: rotate(1.5708rad);
+    }
+
+    .rotate-turn {
+        transform: rotate(0.25turn);
+    }
+
+    .rotate-a {
+        transform: rotateY(60deg) rotateZ(45deg);
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
+    .blue {
+        color: white;
+        background-color: blue;
+    }
+    .red {
+        color: white;
+        background-color: red;
+    }
+    .yellow {
+        color: black;
+        background-color: yellow;
+    }
+</style>
+
+<div class="container">
+    <div class="box blue rotate-a">정사각형(각도)</div>
+    <!--
+    <div class="box red rotate-rad">정사각형(라디안)</div>
+    <div class="box yellow rotate-turn">정사각형(회전 수)</div>-->
+
+</div>
